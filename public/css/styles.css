@@ -1,0 +1,55 @@
+body {
+  margin-top:70px;
+  margin-left:40px;
+  background-color:#F0F0F0;
+  font-family: Comic Sans MS;
+}
+
+footer{
+  position:fixed;
+  text-align: right;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  margin-bottom: 20px;
+  padding-right: 300px;
+}
+#inputField {
+  padding-left: 20%;
+}
+
+li {
+  padding-bottom: 3px;
+  list-style: none;
+}
+
+#button1 {
+  margin-left: 6%;
+  margin-top: 2%;
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 75%, #6d0019 100%);
+  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 75%,#6d0019 100%);
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 75%,#6d0019 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+  cursor: url(http://www.rw-designer.com/cursor-view/54747-48.gif), auto;
+}
+#form {
+ float: right;
+}
+ul {
+  margin-left: -7%;
+}
+span, button {
+  margin-right: 5px;
+}
+
+#pikka {
+  text-align: center;
+  /*background-image: url('http://www.picgifs.com/graphics/p/pikachu/graphics-pikachu-453448.gif');
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;*/
+}
+.well {
+  padding-right: 15%;
+}
