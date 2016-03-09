@@ -8,6 +8,7 @@ app.controller('CartController', function($scope){
     var item = $scope.item;
     $scope.itemList.push(item);
     $scope.item = {};
+
   }
 
   $scope.removeItem = function (singleItem){
@@ -49,8 +50,8 @@ $scope.removePurchase = function(singleItem) {
   var remove = $scope.completedItemList.indexOf(singleItem)
       $scope.completedItemList.splice(remove, 1);
     }
-  // cart total
 
+  // cart total
   $scope.$watch('completedItemList', function() {
       var cartTotal = 0;
 
@@ -60,17 +61,18 @@ $scope.removePurchase = function(singleItem) {
 
       $scope.cartTotal = cartTotal;
     }, true);
+
+// function drag($scope) {
+//   			$scope.item = [];
+//   			$scope.cartItem = '';
+//   			$scope.cartItem = function (){
+//   				if($scope.tempplayer === "") return
+//   				$scope.names.push({val: $scope.tempplayer});
+//   				$scope.tempplayer = "";
+//   			};
+//   			$scope.checkForNameDelete = function($index){
+//   				if($scope.names[$index].val === ''){
+//   					$scope.names.splice($index, 1);
+//   				}
+//   			};
 });
-
-
-// $('.well').draggable({
-//     revert:true,
-//     proxy:'clone',
-//     onStartDrag:function(){
-//         $(this).draggable('options').cursor = 'not-allowed';
-//         $(this).draggable('proxy').css('z-index',10);
-//     },
-//     onStopDrag:function(){
-//         $(this).draggable('options').cursor='move';
-//     }
-// });

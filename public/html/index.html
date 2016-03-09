@@ -8,41 +8,75 @@
   <title>America: One Big Mall</title>
 </head>
 <body>
+  <div class= "navbar navbar-inverse navbar-static-top">
+          <div class= "container-fluid" id="navBar">
+            <a href= "/" class= "navbar-brand">
+              All In One
+            </a>
+            <button class= "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+              <span class= "icon-bar"></span>
+              <span class= "icon-bar"></span>
+              <span class= "icon-bar"></span>
+            </button>
+            <div class = "collapse navbar-collapse navHeaderCollapse">
+                <ul class = "nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">
+                    Oh,
+                  </a>
+                  <li class = "dropdown">
+                    <a href="#" class = "dropdown-toggle" data-toggle = "dropdown">
+                          <small>the places</small><b class="caret"></b></a>
+                      <ul class= "dropdown-menu">
+                        <li><a href = "#">Here</a></li>
+                        <li><a href = "#">There</a></li>
+                        <li><a href = "#">Everywhere</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">
+                    you'll
+                  </a></li>
+                  <li><a href="../html/gpsWatcher.html">
+                     go!
+                  </a></li>
+                </ul>
+              </div><hr>
+            </div>
+          </div>
   <div class ="container" ng-controller="CartController">
-    <h1 style="">I wish for this</h1>
+    <h2>I wish for this</h2>
    <div class="row" id="inputField">
     <div class="form-group">
       <div class="col-md-3 col-sm-12">
         <input type="text" class="form-control" placeholder="Item Name" ng-model='item.info'>
       </div>
       <div class="col-md-3 col-sm-12">
-        <input type="number" class="form-control" placeholder="Price" ng-model='item.price'>
+        <input type="number" class="form-control" placeholder="Price" ng-model='item.price' ng-required='required'>
       </div>
       <div class="col-md-3 col-sm-12">
-        <input type="text" class="form-control" placeholder="Urgency" ng-model='item.urgency'>
+      <input type="text" class="form-control" placeholder="Urgency" ng-model='item.urgency' ng-required='required'>
       </div>
       <div class="col-md-7 col-sm-12">
-        <button class="btn btn-block" id="button1" ng-click="saveItem()" type="button">Save Todurr</button>
+        <button type="submit" class="btn btn-block" id="button1" ng-click="saveItem()">Save Todurr</button>
       </div>
     </div>
   </div>
     <div class="row">
-     <div class="col-md-6 col-sm-12">
+     <div class="col-md-5 col-sm-12" id='itemlist'>
        <h1>Your Wish List</h1>
       <ul>
         <li class='well' ng-repeat='singleItem in itemList'>
          <strong>Item: {{ singleItem.info }}</strong><br>
          <em>Price: ${{ singleItem.price }}</em><br>
          <small>Urgency: {{ singleItem.urgency}}</small>
-         <span class="glyphicon glyphicon-ok pull-right" ng-click='completedItem(singleItem)'></span>
-         <span class = "glyphicon glyphicon-arrow-up pull-right" ng-if='$index != 0' ng-click ='moveUp(singleItem)'></span>
-         <span class = "glyphicon glyphicon-arrow-down pull-right" ng-click ='moveDown(singleItem)'></span>
-          <button class="btn btn-info btn-sm" id="form" ng-click='editTodo(singleItem)'>Edit</button>
+         <span class="glyphicon glyphicon-ok" id="form" ng-click='completedItem(singleItem)'></span>
+         <span class = "glyphicon glyphicon-arrow-up" id="form" ng-if='$index != 0' ng-click ='moveUp(singleItem)'></span>
+         <span class = "glyphicon glyphicon-arrow-down" id="form" ng-click ='moveDown(singleItem)'></span>
+          <button class="btn btn-info btn-sm" id="form" ng-click='editItem(singleItem)'>Edit</button>
           <button class="btn btn-danger btn-sm" id="form" ng-click='removeItem(singleItem)'>X</button>
         </li>
       </ul>
     </div>
-    <div class="col-md-6 col-sm-12">
+    <div class="col-md-5 col-md-offset-1 col-sm-12" id="itemlist">
       <h1>Item's in Cart</h1>
      <ul>
        <li class='well' id="pikka" ng-repeat='singleItem in completedItemList'>

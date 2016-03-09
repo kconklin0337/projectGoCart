@@ -1,10 +1,43 @@
 body {
-  margin-top:70px;
-  margin-left:40px;
-  background-color:#F0F0F0;
+  background-color:#f5ca75;
   font-family: Comic Sans MS;
 }
-
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+#navBar{
+  margin-left:
+  margin-bottom: 0;
+}
+#navBar a{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right:20px;
+  margin-bottom: 0;
+  color:#d19f41;
+}
+.well {
+  background: #207cca; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #207cca 0%, #1e5799 0%, #55c6b2 0%, #79c6b8 46%, #79c6b8 46%, #58a6e2 78%, #409de5 100%);
+  background: -webkit-linear-gradient(45deg, #207cca 0%,#1e5799 0%,#55c6b2 0%,#79c6b8 46%,#79c6b8 46%,#58a6e2 78%,#409de5 100%);
+ background: linear-gradient(45deg, #207cca 0%,#1e5799 0%,#55c6b2 0%,#79c6b8 46%,#79c6b8 46%,#58a6e2 78%,#409de5 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#409de5',GradientType=1 );
+  font-size: 20px;
+}
+#itemlist{
+  opacity: 0.8;
+  padding-bottom: 1%;
+  background-color: #d19f41;
+  margin-top: 7px;
+  margin-right: 2px;
+  border-radius: 24px 24px 24px 24px;
+ -moz-border-radius: 24px 24px 24px 24px;
+ -webkit-border-radius: 24px 24px 24px 24px;
+ border: 11px double #000000;
+}
 footer{
   position:fixed;
   text-align: right;
@@ -25,13 +58,18 @@ li {
 }
 
 #button1 {
+  font-weight: bold;
+  overflow: visible;
   margin-left: 6%;
   margin-top: 2%;
-    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 75%, #6d0019 100%);
-  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 75%,#6d0019 100%);
-  background: linear-gradient(to bottom, #a90329 0%,#8f0222 75%,#6d0019 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+  background: #207cca;
+  background: -moz-linear-gradient(top, #207cca 0%, #1e5799 0%, #55c6b2 0%, #79c6b8 50%, #9cc5e5 92%, #7db9e8 100%);
+  background: -webkit-linear-gradient(top, #207cca 0%,#1e5799 0%,#55c6b2 0%,#79c6b8 50%,#9cc5e5 92%,#7db9e8 100%);
+  background: linear-gradient(to bottom, #207cca 0%,#1e5799 0%,#55c6b2 0%,#79c6b8 50%,#9cc5e5 92%,#7db9e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#7db9e8',GradientType=0 );
   cursor: url(http://www.rw-designer.com/cursor-view/54747-48.gif), auto;
+  font-family: Comic Sans MS;
+  border-radius: 10px;
 }
 #form {
  float: right;
@@ -42,14 +80,17 @@ ul {
 span, button {
   margin-right: 5px;
 }
-
 #pikka {
   text-align: center;
-  /*background-image: url('http://www.picgifs.com/graphics/p/pikachu/graphics-pikachu-453448.gif');
+  background-image: url('http://www.picgifs.com/graphics/p/pikachu/graphics-pikachu-453448.gif');
   background-size: contain;
   background-repeat: repeat-x;
-  background-repeat: no-repeat;*/
-}
-.well {
-  padding-right: 15%;
+  background-repeat: no-repeat;
+  background: #fac695; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #fac695 0%, #f5ab66 47%, #ef8d31 100%);
+  background: -webkit-linear-gradient(45deg, #fac695 0%,#f5ab66 47%,#ef8d31 100%);
+  background: linear-gradient(45deg, #fac695 0%,#f5ab66 47%,#ef8d31 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31',GradientType=1 );
+  font-size: 20px;
+
 }
